@@ -9,7 +9,6 @@
 
 def letter_stat(our_str):
     our_str_1 = list(our_str)
-    
     letters_dict = {i:our_str_1.count(i) for i in our_str_1}
         # Здесь нужно написать код
     return letters_dict

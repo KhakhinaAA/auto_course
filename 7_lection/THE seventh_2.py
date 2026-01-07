@@ -22,6 +22,27 @@
 # 1337*32*9 = 385056
 
 # Здесь пишем код
+class PersonInfo:
+    def __init__(self,Строка = str,Число = int,*args):
+        self.fio = Строка
+        self.age = Число
+        self.depart = args
+        #print(self.fio)
+        #print(self.age)
+        #print(self.depart)
+        #print(type(self.depart))
+
+    def short_name(self):
+        my_list = list(self.fio)
+        my_list = my_list.reverse(self.fio)
+        print(my_list)
+        return my_list
+        print(my_list)
+    def path_deps(self):
+        a = "-->".join(f"{self.depart}" for i in range(self.depart))
+        print(a)
+    def new_salary(self):
+
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 

@@ -1,60 +1,48 @@
-# I. Напишите класс PublicTransport
-# Экземпляр класса создается из следующих атрибутов:
-#   1. brand - Марка транспорта
-#   2. ЗАЩИЩЕННЫЙ (protected) атрибут engine_power - Мощность двигателя
-#   3. year - Год выпуска
-#   4. color - Цвет
-#   5. max_speed - Максимальная скорость
-# У класса должно быть СВОЙСТВО info, которое выводит на печать информацию о:
-# марке, цвете, годе выпуска и мощности двигателя
-#
-# II. Напишите класс Bus унаследованный от PublicTransport
-# Дополнительными атрибутами будут:
-#   1. passengers - кол-во пассажиров
-#   2. ПРИВАТНЫЙ (private) атрибут park - Парк приписки автобуса
-#   3. ЗАЩИЩЕННЫЙ (protected) атрибут fare - Стоимость проезда
-# Добавить свойство park, которое будет возвращать значение park
-# а при присвоении проверять номер парка, что он в диапазоне от 1000 до 9999
-#
-# III. Напишите класс Tram унаследованный от PublicTransport
-# Дополнительными атрибутами будут:
-#   1. ПРИВАТНЫЙ (private) атрибут route - маршрут трамвая
-#   2. path - длина маршрута
-#   3. ЗАЩИЩЕННЫЙ (protected) атрибут fare - Стоимость проезда
-# У класса должно быть СВОЙСТВО how_long, которое вычисляет время прохождения маршрута по формуле max_speed/(4*path)
+# Напишите класс RomanNums
+# Экземпляр класса создается из строки - Римского числа.
+# Реализуйте методы класса:
+# 1. from_roman, который переводит римскую запись числа в арабскую
+# 2. is_palindrome, метод определяет, является ли арабское число палиндромом (True - является, иначе False)
+# т.е. имеет ли одинаковое значение число при чтении слева направо и справа налево
+# Например (Ввод --> Вывод) :
+# RomanNums('MMMCCLXIII').from_roman() --> 3263
+# RomanNums('CMXCIX').is_palindrome() --> True
 
 # Здесь пишем код
 
-
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
-transport = PublicTransport('Автомобиль', 500, 2040, 'Фиолетовый', 300)
-first_bus = Bus('ЛиАЗ', 210, 2015, 'Зеленый', 100, 70, 1232, 32)
-second_bus = Bus('VOLGABUS', 320, 2019, 'Желтый', 110, 39, 1111, 32)
-first_tram = Tram('71-931M', 125, 2010, 'Красный', 75, 5, 15, 32)
-second_tram = Tram('71-409-1', 240, 2018, 'Белый', 85, 7, 17, 32)
 
-assert isinstance(type(transport).info, property), 'В классе PublicTransport, info - не свойство класса'
-assert transport._engine_power, 'В классе PublicTransport, engine_power не защищенный атрибут'
-assert first_bus._Bus__park, 'В классе Bus, park не приватный атрибут'
-assert second_bus._fare, 'В классе Bus, fare не защищенный атрибут'
-assert first_tram._fare, 'В классе Tram, fare не защищенный атрибут'
-assert second_tram._Tram__route, 'В классе Tram, route не приватный атрибут'
-assert isinstance(type(first_tram).how_long, property), 'В классе Tram, how_long - не свойство класса'
-assert first_tram.how_long == 1.25, 'В классе Tram, how_long неверно вычисляется'
-assert isinstance(type(second_bus).park, property), 'В классе Bus, park - не свойство класса'
-try:
-    second_bus.park = 999
-    raise Exception('Проверка на ограничение диапазона НЕ пройдена')
-except AssertionError:
-    print('Проверка на правильность диапазона пройдена')
-try:
-    second_bus.park = 1234
-    print('Проверка на правильность диапазона пройдена')
-except AssertionError:
-    raise Exception('Проверка на ограничение диапазона НЕ пройдена')
-try:
-    second_bus.park = 10000
-    raise Exception('Проверка на ограничение диапазона НЕ пройдена')
-except AssertionError:
-    print('Проверка на правильность диапазона пройдена')
+
+data = [RomanNums('MMMCCLXIII').from_roman,
+        RomanNums('CXXXIV').from_roman,
+        RomanNums('LXXXVI').from_roman,
+        RomanNums('MCDV').from_roman,
+        RomanNums('CMLXXVIII').from_roman,
+        RomanNums('MMMCDIV').from_roman,
+        RomanNums('CMX').from_roman,
+        RomanNums('MMCCCLXXXVIII').from_roman,
+        RomanNums('MMVIII').from_roman,
+        RomanNums('MCLXXIX').from_roman,
+        RomanNums('MMMDCCXCV').from_roman,
+        RomanNums('CMLXXXVIII').from_roman,
+        RomanNums('CMXCIX').from_roman,
+        RomanNums('CDXLIV').from_roman,
+        RomanNums('CMXCIX').is_palindrome,
+        RomanNums('CDXLIV').is_palindrome,
+        RomanNums('MMMCCLXIII').is_palindrome,
+        RomanNums('CXXXIV').is_palindrome,
+        RomanNums('V').is_palindrome,
+        RomanNums('MI').is_palindrome,
+        RomanNums('XXX').is_palindrome,
+        RomanNums('D').is_palindrome,
+        ]
+
+
+test_data = [3263, 134, 86, 1405, 978, 3404, 910, 2388, 2008, 1179, 3795, 988, 999, 444,
+             True, True, False, False, True, True, False, False]
+
+for i, d in enumerate(data):
+    assert_error = f'Не прошла проверка для метода {d.__qualname__} экземпляра с атрибутами {d.__self__.__dict__}'
+    assert d() == test_data[i], assert_error
+    print(f'Набор для метода {d.__qualname__} экземпляра класса с атрибутами {d.__self__.__dict__} прошёл проверку')
 print('Всё ок')

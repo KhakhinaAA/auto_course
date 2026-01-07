@@ -13,16 +13,15 @@
 import math
 class Segment():
     def __init__(self,t1,t2):
-        self.xa = int(t1[0])
-        self.xb = int(t2[0])
-        self.ya = int(t1[1])
-        self.yb = int(t2[1])
+        self.xa = t1[0]
+        self.xb = t2[0]
+        self.ya = t1[1]
+        self.yb = t2[1]
     def length(self):
-        length_1 = math.sqrt((self.xb - self.xa)**2 + (self.yb - self.ya)**2)
-        length_1 = round(length_1, 2)
-        length_1 = int(length_1)
-        print(length_1)
-        print(type(length_1))
+
+        d = round(math.sqrt((self.xb - self.xa)**2 + (self.yb - self.ya)**2),2)
+        return(d)
+
     def x_axis_intersection(self):
 
         if self.ya <= 0 and self.yb >= 0  or self.yb <= 0 and self.ya >= 0 :
