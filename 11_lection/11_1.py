@@ -7,15 +7,24 @@
 # Для сдачи задания пришлите код и запись с экрана прохождения теста
 
 from selenium import webdriver
-from time import sleep
-from selenium.webdriver.common.by import By
-from selenium.webdriver import ActionChains
+from selenium.webdriver.chrome.options import Options
+
+options = Options()
+
+options.add_experimental_option("prefs", {
+    "profile.default_content_setting_values.notifications": 2,  # disable all notice
+    "profile.default_content_setting_values.media_stream_mic": 2,  # disable microphone
+    "profile.default_content_setting_values.media_stream_camera": 2,  # disable camera
+    "profile.default_content_setting_values.geolocation": 2,  # disable geolocations
+})
+
+driver = webdriver.Chrome(options=options)
 
 sbis_site = 'https://sbis.ru/'
 tenzor_site = 'https://tensor.ru/'
 block_news = 'Сила в людях'
 tenzor_about = 'https://tensor.ru/about'
-driver = webdriver.Chrome()
+
 
 
 try:
