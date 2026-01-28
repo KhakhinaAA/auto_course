@@ -4,16 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e2ee2e-cc8a-4b00-88e1-857a0692f3b2" name="Changes" comment="заново сделала домашку ибо всё закосячила gitom">
+    <list default="true" id="f2e2ee2e-cc8a-4b00-88e1-857a0692f3b2" name="Changes" comment="закончено задание 12_2">
+      <change afterPath="$PROJECT_DIR$/12_lection/12_0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_lection/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_lection/config_discribe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_lection/test_13_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_13_lection/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_13_lection/pages/auth_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_13_lection/pages/task_13_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_13_lection/pages/task_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_13_lection/test_registry_task.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_lection/11_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_lection/11_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_lection/11_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_lection/11_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_lection/11_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_lection/11_3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,17 +35,126 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="380ly4riblx2w63qocIkdz23trf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/user/project_auto/test_13_lection",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\project_auto\test_13_lection" />
+      <recent name="C:\Users\user\project_auto\13_lection" />
+      <recent name="C:\Users\user\project_auto\12_lection" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\project_auto\12_lection" />
+      <recent name="C:\Users\user\project_auto\13_lection" />
+      <recent name="C:\Users\user\project_auto\13_lection\pages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest in test_13_1.py">
+    <configuration name="pytest in 12_1.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="project_auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12_lection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/12_lection/12_1.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in 12_2.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="project_auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12_lection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/12_lection/12_2.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in 12_3.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="project_auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12_lection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/12_lection/12_3.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_13_1.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="project_auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_13_lection/13_1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/12_lection/test_13_1.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_13_lection" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="project_auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_13_lection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_13_lection&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest in test_13_1.py" />
+        <item itemvalue="Python tests.pytest in test_13_lection" />
+        <item itemvalue="Python tests.pytest in 12_1.py" />
+        <item itemvalue="Python tests.pytest in 12_3.py" />
+        <item itemvalue="Python tests.pytest in 12_2.py" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,11 +171,89 @@
       <option name="project" value="LOCAL" />
       <updated>1767957160590</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="обновила домашку ибо всё закосячила gitom">
+      <created>1767963784264</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1767963784264</updated>
+    </task>
+    <task id="LOCAL-00003" summary="12 esson обавила задания">
+      <created>1767974162261</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1767974162261</updated>
+    </task>
+    <task id="LOCAL-00004" summary="заново сделала 11_1">
+      <created>1768321767797</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768321767797</updated>
+    </task>
+    <task id="LOCAL-00005" summary="заново сделала 11_2">
+      <created>1768550138924</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1768550138924</updated>
+    </task>
+    <task id="LOCAL-00006" summary="заново сделала 11_3">
+      <created>1768556712494</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1768556712494</updated>
+    </task>
+    <task id="LOCAL-00007" summary="закончено задание 12_1">
+      <created>1769150096628</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1769150096628</updated>
+    </task>
+    <task id="LOCAL-00008" summary="закончено задание 12_2">
+      <created>1769231004101</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1769231004101</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="заново сделала домашку ибо всё закосячила gitom" />
-    <option name="LAST_COMMIT_MESSAGE" value="заново сделала домашку ибо всё закосячила gitom" />
+    <MESSAGE value="обновила домашку ибо всё закосячила gitom" />
+    <MESSAGE value="12 esson обавила задания" />
+    <MESSAGE value="заново сделала 11_1" />
+    <MESSAGE value="заново сделала 11_2" />
+    <MESSAGE value="заново сделала 11_3" />
+    <MESSAGE value="закончено задание 12_1" />
+    <MESSAGE value="закончено задание 12_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="закончено задание 12_2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/12_lection/test_13_1.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
