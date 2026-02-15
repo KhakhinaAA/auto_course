@@ -1,0 +1,14 @@
+[GENERAL]
+BROWSER = "CHROME"
+SITE = 'https://fix-online.sbis.ru/'
+ELEMENT_OUTPUT_LOG = 'user_friendly/locator/name'
+DO_NOT_RESTART = true
+SOFT_RESTART = false
+WAIT_ELEMENT_LOAD = 20
+
+[CUSTOM]
+SBIS_SITE = 'https://fix-online.sbis.ru/'
+SITE_CONTACTS = 'https://fix-online.sbis.ru/page/dialogs'
+sbis_title = 'СБТС - экосистема для бизнеса'
+USER_LOGIN = 'khakhinaNastya'
+USER_PASSWORD = 'khakhinaNastya123'

@@ -7,8 +7,8 @@
 from atf.ui import *
 from atf import *
 from time import sleep
-from selenium.webdriver import Keys
-from selenium.webdriver.common.by import By
+# from selenium.webdriver import Keys
+# from selenium.webdriver.common.by import By
 
 
 class List_contacts(Region):
