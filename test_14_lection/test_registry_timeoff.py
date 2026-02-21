@@ -1,7 +1,7 @@
 from atf.ui import *
 from pages.auth_page import AuthPage
-from pages.WorkScheduleDocuments import WorkScheduleDocuments
-from pages.taskDialog1 import Dialog
+from pages.saby_pages.WorkScheduleDocuments import WorkScheduleDocuments
+from test_14_lection.pages.libraries.WorkTimeDocuments.timeoff import Dialog
 
 
 class TestControls2(TestCaseUI):

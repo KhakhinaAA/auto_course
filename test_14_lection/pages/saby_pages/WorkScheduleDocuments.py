@@ -19,6 +19,7 @@ class WorkScheduleDocuments(Region):
     delete = ControlsOperationsPanel(By.CSS_SELECTOR, '[title="Удалить"] .controls-BaseButton__text', 'Удалить')
     agree_delete_elm = Element(SabyBy.DATA_QA, 'controls-ConfirmationDialog__button-true', 'Да')
     empty_list_hev = HintTemplateEmptyView(By.CSS_SELECTOR, '.hint-EmptyView__title', 'Не найдено ни  одной записи')
+    open_calendar = Button(By.CSS_SELECTOR, '[data-qa="wtd-DayTimeSelector__dateInput"]', 'пт')
 
     def open(self):
 

@@ -1,6 +1,9 @@
+from atf import *
 from atf.ui import *
 from controls import *
-from atf import *
+from test_13_lection.pages.libraries.Message.dialogsMove import DialogTemplate as Dialog
+from test_13_lection.pages.libraries.Controls.menu import Popup
+from test_13_lection.pages.libraries.Controls.operationsPanel import OperationsPanel
 
 
 class ContactRegistry(Region):
@@ -8,19 +11,20 @@ class ContactRegistry(Region):
     contacts = ControlsTreeView(By.CSS_SELECTOR, '.controls-ListViewV .msg-dialogs-item', 'Сообщения')
     search = ControlsSearchInput()
     search_button = Element(By.CSS_SELECTOR, '[data-qa="Search__searchButton"]', 'Начать поиск')
-    folder_relocate = ControlsTreeGridView(By.CSS_SELECTOR, '[data-qa="gridWrapper"]', 'папка  для переноса')
     folder1_mark_elm = Element(By.CSS_SELECTOR, '[title="Папка 1"].tag-base .icon-Close', 'Папка 1')
-    context_menu = ControlsPopup(By.CSS_SELECTOR, '.controls_popupTemplate_theme-default.controls-Zoom', 'диалог меню')
     more = Element(By.CSS_SELECTOR, '[data-qa="item"] [title="Ещё"]', 'кнопка еще')
     close_elem = Element(By.CSS_SELECTOR, '.tags-base__close', 'сброс папки')
     tabs = ControlsTabsButtons(By.CSS_SELECTOR, '.controls-Tabs-wrapper__horizontal', 'Вкладки')
-    chat_contact = ControlsTreeView(By.CSS_SELECTOR, '.controls-ListViewV .controls-BaseControl_showActions_delayed', 'Контакты в чатах')
-    massage_chat = ControlsTreeView(By.CSS_SELECTOR, '.controls-ListViewV .msg-Correspondence__DialogItem', 'Сообщения чатов')
+    chat_contact = ControlsTreeView(By.CSS_SELECTOR, '.controls-ListViewV .controls-BaseControl_showActions_delayed',
+                                    'Контакты в чатах')
+    massage_chat = ControlsTreeView(By.CSS_SELECTOR, '.controls-ListViewV .msg-Correspondence__DialogItem',
+                                    'Сообщения чатов')
     pmo_open = ControlsButton(By.CSS_SELECTOR, '.controls-BaseButton .icon-Check2', 'Отметить в аккордеоне')
-    pmo = ControlsOperationsPanel()
-    notice = ControlsToolbarsView(By.CSS_SELECTOR, '.controls-Toolbar.controls-operationsPanelV__toolbar', 'Действия в ПМО')
+    notice = ControlsToolbarsView(By.CSS_SELECTOR, '.controls-Toolbar.controls-operationsPanelV__toolbar',
+                                  'Действия в ПМО')
     papka_2 = ControlsTreeGridView(By.CSS_SELECTOR, '[title="Папка 2"].controls-fontsize-m', 'Папка 2')
-    folder2_mark_elm = Element(By.CSS_SELECTOR, '[name="simpleContainer"] [title="Папка 2"] .icon-Close', 'маркер на сообщении')
+    folder2_mark_elm = Element(By.CSS_SELECTOR, '[name="simpleContainer"] [title="Папка 2"] .icon-Close',
+                               'маркер на сообщении')
 
     def check_load(self):
         """Поверка загрузки реестра """
@@ -36,11 +40,13 @@ class ContactRegistry(Region):
 
     def relocate_massage(self, menu_text, tab):
         """Перенос сообщения в папку"""
+        reloc = Dialog(self.driver)
         self.contacts.mouse_over()
         self.more.click()
         delay(2)
-        self.context_menu.select(menu_text)
-        self.folder_relocate.item(contains_text=tab).click()
+        cont = Popup(self.driver)
+        cont.context_menu.select(menu_text)
+        reloc.folder_relocate.item(contains_text=tab).click()
 
     def check_relocate(self, tab):
         self.folder1_mark_elm.should_be(Displayed)
@@ -65,7 +71,8 @@ class ContactRegistry(Region):
     def notice_tab(self, text_butn):
         self.pmo_open.click()
         # self.pmo.open()
-        self.pmo.mark_from_mass_operation('Всё', open_form=False)
+        oper = OperationsPanel(self.driver)
+        oper.pmo.mark_from_mass_operation('Всё', open_form=False)
         self.notice.select(contains_text=text_butn)
         delay(2)
         self.papka_2.click()

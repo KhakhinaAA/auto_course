@@ -1,8 +1,7 @@
 from controls import *
 from atf.ui import *
-from pages.panel import Panel
-from pages.calendar import Calendar
-from test_14_lection.pages.popup import Stack
+from test_14_lection.pages.libraries.EDO3.passage import Panel
+from test_14_lection.pages.libraries.Staff.selectionNew import Stack
 
 
 @templatename('WorkTimeDocuments/timeoff:Dialog')
@@ -16,7 +15,7 @@ class Dialog(DocumentTemplate):
     open_elm = Element(By.CSS_SELECTOR, '.controls-InputBase__stretcher-block_margin-null', 'дата сегодня')
     reason = Element(By.CSS_SELECTOR, '.richEditor_Base_textContainer', 'Описание')
     clock_elm = Element(By.CSS_SELECTOR, '.icon-TimeSkinny', 'часы')
-    time_el_start = ControlsInputText(By.CSS_SELECTOR, '[data-qa="wtd-TimeIntervalMinutes__start"] input', 'начало отгула')
+    time_el_start = ControlsInputText(By.CSS_SELECTOR, '[data-qa="wtd-TimeIntervalMinutes__start"] input', 'старт')
     time_el_end = Element(By.CSS_SELECTOR, '[data-qa="wtd-TimeIntervalMinutes__end"]', 'конец отгула')
     close_elm = Element(By.CSS_SELECTOR, '.controls-CloseButton__close__icon_functionalButton', 'закрыть карточку')
 
@@ -28,9 +27,12 @@ class Dialog(DocumentTemplate):
             self.employee_cl.autocomplete_search(kwargs['Сотрудник'])
 
     def fill_time_off(self, **kwargs):
+        """Заполнение в отгуле
+        причины
+        дата"""
         if 'Причина' in kwargs.keys():
             self.reason_re.type_in(kwargs['Причина'])
-        # cal = Calendar(self.driver)
+        # cal = (self.driver)
         # cal.calendar_1()
 
     def run_task(self, **kwargs):
@@ -49,6 +51,3 @@ class Dialog(DocumentTemplate):
         self.clock_elm.click()
         self.time_el_start.type_in(1200)
         self.time_el_end.type_in('1400')
-
-
-
