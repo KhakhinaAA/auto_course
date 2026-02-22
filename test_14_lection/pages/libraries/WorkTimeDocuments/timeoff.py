@@ -43,11 +43,13 @@ class Dialog(DocumentTemplate):
         self.phase_db.should_not_be(Displayed)
 
     def check_completion(self, **kwargs):
+        """Проверяем заполнение Сотрудника, причины"""
         self.employee_cl.should_be(ContainsText(kwargs['Сотрудник']))
         self.reason.should_be(ContainsText(kwargs['Причина']))
         self.close_elm.click()
 
     def clock_time_off(self):
+        """Заполняем время отгула (не справилась)"""
         self.clock_elm.click()
         self.time_el_start.type_in(1200)
         self.time_el_end.type_in('1400')

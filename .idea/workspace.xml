@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e2ee2e-cc8a-4b00-88e1-857a0692f3b2" name="Changes" comment="15 задание">
+    <list default="true" id="f2e2ee2e-cc8a-4b00-88e1-857a0692f3b2" name="Changes" comment="завершение 15 задания">
       <change afterPath="$PROJECT_DIR$/12_lection/12_0.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/12_lection/13_0.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/12_lection/config_discribe" afterDir="false" />
@@ -15,27 +15,18 @@
       <change afterPath="$PROJECT_DIR$/example_14_lection/pages/selector.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/example_14_lection/pages/taskDialog.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/example_14_lection/pages/task_14_0.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_13_lection/pages/libraries/Controls/menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_13_lection/pages/libraries/Controls/operationsPanel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_13_lection/pages/libraries/Message/dialogsMove.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_15_lection/pages/libraries/Addressee/popup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_15_lection/pages/libraries/EDOPlans/_scheduling/selector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_15_lection/pages/libraries/EDOPlans/dialog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_15_lection/pages/libraries/EDOPlans/point.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_15_lection/pages/libraries/StaffCommon/selectionNew.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_15_lection/pages/libraries/controls_Layout/selectorSticky.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_15_lection/pages/saby_pages/Plans.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project_auto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project_auto.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_lection/test_13_1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_13_lection/pages/task_13_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_13_lection/pages/task_13_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_14_lection/pages/WorkScheduleDocuments.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_14_lection/pages/saby_pages/WorkScheduleDocuments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_lection/11_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_lection/11_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_lection/11_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_lection/11_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_lection/11_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_lection/11_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_lection/test_12_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_lection/test_12_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_lection/test_12_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_lection/test_12_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_lection/test_12_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_lection/test_12_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_14_lection/pages/calendar.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_14_lection/pages/libraries/Controls/datePopup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_14_lection/pages/panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_14_lection/pages/libraries/EDO3/passage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_14_lection/pages/popup.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_14_lection/pages/libraries/Staff/selectionNew.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_14_lection/pages/taskDialog1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_14_lection/pages/libraries/WorkTimeDocuments/timeoff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_14_lection/pages/libraries/WorkTimeDocuments/timeoff.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_14_lection/pages/libraries/WorkTimeDocuments/timeoff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_14_lection/pages/saby_pages/WorkScheduleDocuments.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_14_lection/pages/saby_pages/WorkScheduleDocuments.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_14_lection/test_registry_timeoff.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_14_lection/test_registry_timeoff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_15_lection/pages/saby_pages/Plans.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_15_lection/pages/saby_pages/Plans.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_15_lection/test_plan_create.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_15_lection/test_plan_create.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +81,70 @@
       <recent name="C:\Users\user\project_auto\test_14_lection\pages\libraries\Staff" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_plan_create.TestControls2.test_1">
+  <component name="RunManager" selected="Python.11_3">
+    <configuration name="11_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="project_auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/11_lection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/11_lection/11_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="11_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="project_auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/11_lection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/11_lection/11_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="11_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="project_auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/11_lection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/11_lection/11_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Autodetect">
       <module name="project_auto" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,98 +177,47 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_13_1.TestRegLesson" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_12_1.Test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="project_auto" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="C:\env\atf311\Scripts\python.exe" />
       <option name="SDK_NAME" value="Python 3.11 (atf311)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_13_lection" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12_lection" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;--tb\u003dnative&quot;" />
-      <option name="_new_target" value="&quot;test_13_1.TestRegLesson&quot;" />
+      <option name="_new_target" value="&quot;test_12_1.Test&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_plan_create.TestControls2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_12_2.Test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="project_auto" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="C:\env\atf311\Scripts\python.exe" />
       <option name="SDK_NAME" value="Python 3.11 (atf311)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_15_lection" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12_lection" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;--tb\u003dnative&quot;" />
-      <option name="_new_target" value="&quot;test_plan_create.TestControls2&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_plan_create.TestControls2.test_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="project_auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\env\atf311\Scripts\python.exe" />
-      <option name="SDK_NAME" value="Python 3.11 (atf311)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_15_lection" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;--tb\u003dnative&quot;" />
-      <option name="_new_target" value="&quot;test_plan_create.TestControls2.test_1&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_registry_timeoff.TestControls2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="project_auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\env\atf311\Scripts\python.exe" />
-      <option name="SDK_NAME" value="Python 3.11 (atf311)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_14_lection" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;--tb\u003dnative&quot;" />
-      <option name="_new_target" value="&quot;test_registry_timeoff.TestControls2&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_registry_timeoff.TestControls2.test_2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="project_auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\env\atf311\Scripts\python.exe" />
-      <option name="SDK_NAME" value="Python 3.11 (atf311)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_14_lection" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;--tb\u003dnative&quot;" />
-      <option name="_new_target" value="&quot;test_registry_timeoff.TestControls2.test_2&quot;" />
+      <option name="_new_target" value="&quot;test_12_2.Test&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_plan_create.TestControls2.test_1" />
-        <item itemvalue="Python tests.pytest for test_plan_create.TestControls2" />
-        <item itemvalue="Python tests.pytest for test_registry_timeoff.TestControls2" />
-        <item itemvalue="Python tests.pytest for test_13_1.TestRegLesson" />
-        <item itemvalue="Python tests.pytest for test_registry_timeoff.TestControls2.test_2" />
+        <item itemvalue="Python.11_3" />
+        <item itemvalue="Python.11_2" />
+        <item itemvalue="Python.11_1" />
+        <item itemvalue="Python tests.pytest for test_12_2.Test" />
+        <item itemvalue="Python tests.pytest for test_12_1.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -311,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1771184779737</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="завершение 15 задания">
+      <created>1771663207320</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1771663207320</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -337,6 +347,18 @@
     <MESSAGE value="Задание 13" />
     <MESSAGE value="завершение 12,13 задания" />
     <MESSAGE value="15 задание" />
-    <option name="LAST_COMMIT_MESSAGE" value="15 задание" />
+    <MESSAGE value="завершение 15 задания" />
+    <option name="LAST_COMMIT_MESSAGE" value="завершение 15 задания" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/11_lection/11_3.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
