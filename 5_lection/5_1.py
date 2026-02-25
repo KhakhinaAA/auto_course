@@ -6,11 +6,16 @@
 # 'letter' --> {'l': 1, 'e': 2, 't': 2, 'r': 1}
 
 
-
 def letter_stat(our_str):
+    """
+    Возращает словарь letters_dict,
+    где в качестве ключей буквы строки, а значениями являются числа,
+    соответствующие количеству вхождений данной буквы в строку.
+    :param our_str: строка
+
+    """
     our_str_1 = list(our_str)
-    letters_dict = {i:our_str_1.count(i) for i in our_str_1}
-        # Здесь нужно написать код
+    letters_dict = {j: our_str_1.count(j) for j in our_str_1}
     return letters_dict
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

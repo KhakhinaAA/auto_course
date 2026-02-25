@@ -4,11 +4,14 @@
 # (1, 2, 3, 4, 5, 6, 7, 8, 9, 0)  => "(123) 456-7890"
 
 def create_phone_number(num_tuple):
-    # Здесь нужно написать код
+    """
+    Возвращает строку в виде номера телефона str_phone
+    :param num_tuple: кортеж из 10 цифр
+    """
     import re
     str_phone_1 = str(num_tuple)
-    str_phone_2 = re.split(r'[,)(" "]',str_phone_1)
-    print(str_phone_2,'1')
+    str_phone_2 = re.split(r'[,)(" ]', str_phone_1)
+    print(str_phone_2, '1')
     while '' in str_phone_2:
         str_phone_2.remove('')
     print(str_phone_2, '2')

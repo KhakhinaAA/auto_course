@@ -5,13 +5,13 @@
 # [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]] -->  [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
-def flatten_and_sort(array, result_list=[]):
-    #result_list = []
+def flatten_and_sort(array, result_list=None):
+    if result_list is None:
+        result_list = []
     for list_1 in array:
         for list_end in list_1:
             result_list.append(list_end)
     result_list.sort()
-        # Здесь нужно написать код
     return result_list
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
@@ -34,4 +34,6 @@ for i, d in enumerate(data):
     print(f'Тестовый набор {d} прошёл проверку')
 print('Всё ок')
 
-#Вопросы: "почему result_list = [] нельзя было объявить в (array)и если result_list.sort() объявить внутри цикла, почему не сработает проверка"
+"""#Вопросы: "почему result_list = [] нельзя было объявить в 
+# (array)и если result_list.sort() 
+# объявить внутри цикла, почему не сработает проверка"""

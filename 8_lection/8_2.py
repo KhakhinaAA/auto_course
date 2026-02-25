@@ -23,7 +23,6 @@ class Trigon:
         print(self.l_1)
         self.a = len(self.l_1)
         print(self.a)
-    #def number_1(self):
         if self.a != 3:
             a1 = "Передано {} аргументов, а ожидается 3".format(self.a)
             raise IndexError(a1)
@@ -42,7 +41,6 @@ class Trigon:
 
 
 class MyTestCase(unittest.TestCase):
-
     def test(self):
         data = [(3, '7', 5), (-3, 7, 5), (2, 5, 2), (3, 4, 5, 6), (3, 4), (3, 4, 5)]
 

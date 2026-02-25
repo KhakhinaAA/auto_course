@@ -11,22 +11,49 @@
 # 15 --> 75
 # 4974 --> 7974
 
-def max_division_by_3(num):
-    # Здесь нужно написать код
-    count = 0 # количество цифр в исходном числе
-    while (num > 0):
-        count = count + 1
-        num = num // 10
-    num_1 = str(num)
-    num_1 = list(num_1) #num превращенный в список
-    for i in range(num,10**count,1):
-        a = str(i)
-        spicoc = list(a) #Список
-        print(spicoc)
-        for l in spicoc:
+def max_division_by_3(n):
+    """Преобразует натуральное число в натуральное число,
+    путем изменения 1 цифры таким образом,
+    чтобы новое число стало максимально большим,
+     сохраняло количество цифр, делясь при этом нацело на три.
+       """
+    # Преобразуем число в список цифр
+    digits = list(map(int, str(n)))
 
-    return new_num
+    # Сумма цифр текущего числа
+    sum_digits = sum(digits)
 
+    # Проверяем остаток от деления суммы на 3
+    remainder = sum_digits % 3
+
+    if remainder == 0:
+        return n
+
+    best_result = None
+    for i in range(len(digits)):
+        original_digit = digits[i]
+
+        # Пробуем изменить цифру на большее значение
+        for new_digit in range(original_digit + 1, 10):
+            # Создаем копию списка цифр
+            temp_digits = digits[:]
+
+            # Меняем выбранную цифру
+            temp_digits[i] = new_digit
+
+            # Вычисляем новую сумму цифр
+            new_sum = sum(temp_digits)
+
+            # Проверяем, делится ли новая сумма на 3
+            if new_sum % 3 == 0:
+                # Формируем новое число
+                candidate = int(''.join(map(str, temp_digits)))
+
+                # Обновляем лучший результат
+                if best_result is None or candidate > best_result:
+                    best_result = candidate
+
+    return best_result
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
 
