@@ -3,12 +3,15 @@
 # [1, 0, 1, 2, 0, 1, 3]  => [1, 1, 2, 1, 3, 0, 0]
 
 def move_zeros(lst):
-    for i in lst:
-        if i == 0:
-            a = int(i)
-            lst.remove(i)
+    """
+    Перемещает все нули в конец, сохраняя порядок остальных элементов
+    :param lst: список
+    """
+    for j in lst:
+        if j == 0:
+            a = int(j)
+            lst.remove(j)
             lst.append(a)
-    # Здесь нужно написать код
     return lst
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

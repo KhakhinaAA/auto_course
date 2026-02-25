@@ -4,10 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e2ee2e-cc8a-4b00-88e1-857a0692f3b2" name="Changes" comment="завершение 15 задания">
+    <list default="true" id="f2e2ee2e-cc8a-4b00-88e1-857a0692f3b2" name="Changes" comment="отредактировала с 11 по 15 задание">
+      <change afterPath="$PROJECT_DIR$/10_lection/Nastya_10_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_lection/pytest.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_lection/test_Nastya_10_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_lection/test_Nastya_10_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_lection/test_Nastya_10_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_lection/test_Nastya_10_star.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/12_lection/12_0.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/12_lection/13_0.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/12_lection/config_discribe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_lection/5_2 Nastya.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_lection/5_3 Nastya.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_lection/5_4 Nastya.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_lection/6_1 Nasty.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_lection/6_2 Nasty.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_lection/7_2 .py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_lection/7_4  Nasty.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8_lection/8_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_lection/task_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_lection/task_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_lection/task_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_lection/test_file/task1_answer.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_lection/test_file/task1_data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_lection/test_file/task1_ethalon.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_lection/test_file/task_3.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/example_14_lection/config.toml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/example_14_lection/pages/auth_page.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/example_14_lection/pages/dialog.py" afterDir="false" />
@@ -16,18 +37,23 @@
       <change afterPath="$PROJECT_DIR$/example_14_lection/pages/taskDialog.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/example_14_lection/pages/task_14_0.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_lection/11_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_lection/11_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_lection/11_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_lection/11_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_lection/11_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_lection/11_3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_lection/test_12_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_lection/test_12_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_lection/test_12_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_lection/test_12_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_lection/test_12_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_lection/test_12_3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_14_lection/pages/calendar.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_14_lection/pages/libraries/Controls/datePopup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_14_lection/pages/libraries/WorkTimeDocuments/timeoff.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_14_lection/pages/libraries/WorkTimeDocuments/timeoff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_14_lection/pages/saby_pages/WorkScheduleDocuments.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_14_lection/pages/saby_pages/WorkScheduleDocuments.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_14_lection/test_registry_timeoff.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_14_lection/test_registry_timeoff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_15_lection/pages/saby_pages/Plans.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_15_lection/pages/saby_pages/Plans.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_15_lection/test_plan_create.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_15_lection/test_plan_create.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_lection/The fird2.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_lection/The fird2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_lection/The fird3.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_lection/The fird3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_lection/THE fourth_2 .py" beforeDir="false" afterPath="$PROJECT_DIR$/4_lection/THE fourth_2 .py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_lection/THE fourth_3 .py" beforeDir="false" afterPath="$PROJECT_DIR$/4_lection/THE fourth_3 .py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_lection/THE fourth_4 .py" beforeDir="false" afterPath="$PROJECT_DIR$/4_lection/THE fourth_4 .py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_lection/THE fourth_5 .py" beforeDir="false" afterPath="$PROJECT_DIR$/4_lection/THE fourth_5 .py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_lection/THE fourth_6.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_lection/THE fourth_6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_lection/THE fourth_7.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_lection/THE fourth_7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_lection/THE fifty_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/5_lection/5_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_lection/THE seventh_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/7_lection/7_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_lection/THE seventh_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/с ноута/THE seventh_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_lection/THE seventh_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/7_lection/7_3 Nasty.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8_lection/THE eight_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/8_lection/8_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8_lection/THE eight_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/8_lection/8_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/THE fourth_8_star.py" beforeDir="false" afterPath="$PROJECT_DIR$/THE fourth_8_star.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first script.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_lesson/first script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second script.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_lesson/second script.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,28 +87,28 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/project_auto/test_15_lection&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/project_auto/9_lection/test_file&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\project_auto\9_lection\test_file" />
       <recent name="C:\Users\user\project_auto\test_15_lection" />
       <recent name="C:\Users\user\project_auto\test_15_lection\pages" />
       <recent name="C:\Users\user\project_auto\test_14_lection\pages" />
       <recent name="C:\Users\user\project_auto\test_14_lection" />
-      <recent name="C:\Users\user\project_auto\test_13_lection" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\project_auto\test_13_lection\pages\libraries\Controls" />
-      <recent name="C:\Users\user\project_auto\test_14_lection\pages\libraries\Controls" />
-      <recent name="C:\Users\user\project_auto\test_14_lection\pages\libraries" />
-      <recent name="C:\Users\user\project_auto\test_14_lection\pages\libraries\EDO3" />
-      <recent name="C:\Users\user\project_auto\test_14_lection\pages\libraries\Staff" />
+      <recent name="C:\Users\user\project_auto\10_lection" />
+      <recent name="C:\Users\user\project_auto\9_lection" />
+      <recent name="C:\Users\user\project_auto\8_lection" />
+      <recent name="C:\Users\user\project_auto\7_lection" />
+      <recent name="C:\Users\user\project_auto\с ноута" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.11_3">
-    <configuration name="11_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.THE fourth_8_star">
+    <configuration name="THE fourth_8_star" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="project_auto" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,53 +116,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/11_lection" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/11_lection/11_1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="11_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="project_auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/11_lection" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/11_lection/11_2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="11_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="project_auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/11_lection" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/11_lection/11_3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/THE fourth_8_star.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,47 +161,81 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_12_1.Test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_Nastya_10_2.test_zero" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="project_auto" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="C:\env\atf311\Scripts\python.exe" />
       <option name="SDK_NAME" value="Python 3.11 (atf311)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12_lection" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/10_lection" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;--tb\u003dnative&quot;" />
-      <option name="_new_target" value="&quot;test_12_1.Test&quot;" />
+      <option name="_new_target" value="&quot;test_Nastya_10_2.test_zero&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_12_2.Test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_Nastya_10_3.test_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="project_auto" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="C:\env\atf311\Scripts\python.exe" />
       <option name="SDK_NAME" value="Python 3.11 (atf311)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12_lection" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/10_lection" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;--tb\u003dnative&quot;" />
-      <option name="_new_target" value="&quot;test_12_2.Test&quot;" />
+      <option name="_new_target" value="&quot;test_Nastya_10_3.test_1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_Nastya_10_3.test_2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="project_auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\env\atf311\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11 (atf311)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/10_lection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--tb\u003dnative&quot;" />
+      <option name="_new_target" value="&quot;test_Nastya_10_3.test_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_Nastya_10_2.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="project_auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\env\atf311\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11 (atf311)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/10_lection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--tb\u003dnative&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/10_lection/test_Nastya_10_2.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.11_3" />
-        <item itemvalue="Python.11_2" />
-        <item itemvalue="Python.11_1" />
-        <item itemvalue="Python tests.pytest for test_12_2.Test" />
-        <item itemvalue="Python tests.pytest for test_12_1.Test" />
+        <item itemvalue="Python.THE fourth_8_star" />
+        <item itemvalue="Python tests.pytest for test_Nastya_10_2.test_zero" />
+        <item itemvalue="Python tests.pytest in test_Nastya_10_2.py" />
+        <item itemvalue="Python tests.pytest for test_Nastya_10_3.test_1" />
+        <item itemvalue="Python tests.pytest for test_Nastya_10_3.test_2" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1771663207320</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="отредактировала с 11 по 15 задание">
+      <created>1771787335000</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1771787335000</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -348,17 +373,7 @@
     <MESSAGE value="завершение 12,13 задания" />
     <MESSAGE value="15 задание" />
     <MESSAGE value="завершение 15 задания" />
-    <option name="LAST_COMMIT_MESSAGE" value="завершение 15 задания" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/11_lection/11_3.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="отредактировала с 11 по 15 задание" />
+    <option name="LAST_COMMIT_MESSAGE" value="отредактировала с 11 по 15 задание" />
   </component>
 </project>

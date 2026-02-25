@@ -10,8 +10,8 @@ def sum_digits(num):
     our_sum = 0
     x = str(num)
     if num > 0:
-        for i in x:
-            our_sum += int(i)
+        for j in x:
+            our_sum += int(j)
             print(our_sum)
     # Здесь нужно написать код
     return our_sum

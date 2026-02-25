@@ -1,11 +1,10 @@
 import math
 
-l = 8
-s = l**2
-p = 4*l
-#d = math.sqrt(2)
-d1 = l * math.sqrt(2)
-print( l , s, p, d1)
+m = 8
+s = m**2
+p = 4*m
+d1 = m * math.sqrt(2)
+print(m, s, p, d1)
 
 a = 4
 b = 9
@@ -14,20 +13,20 @@ d_2 = b**2 - 4*a*c
 x_1 = (-b - math.sqrt(d_2)) / (2*a)
 x_2 = (-b + math.sqrt(d_2)) / (2*a)
 
-print(round(x_1, 2),round(x_2, 2))
+print(round(x_1, 2), round(x_2, 2))
 
 
-string_1 ='"Москва" - столица России'
-string_2 ='"Ярославль" - славный город'
+string_1 = '"Москва" - столица России'
+string_2 = '"Ярославль" - славный город'
 string_3 = string_2[:11] + string_1[7:] + '\n' + string_1[:7] + string_2[10:]
 print(string_3)
 
-string_11 ='"Москва" - столица России'
-string_22 ='"Ярославль" - славный город'
+string_11 = '"Москва" - столица России'
+string_22 = '"Ярославль" - славный город'
 string_33 = string_2[:2] + string_1[2:] + ' ' + string_1[:2] + string_2[2:]
 print(string_3)
 
-string_4 = 'C:\python project\second script.py'
+string_4 = 'C:/python project/second script.py'
 list_put = string_4.split("\\")
 list_end = list_put[-1].split('.')
 list_cool = list_end[0]
@@ -39,7 +38,7 @@ cc = aa + bb
 dd = aa * bb
 result = f"""
 Сумма %d + %d = %d произведение %d * %d = %d
-""" % (aa, bb ,cc, aa , bb ,dd)
+""" % (aa, bb, cc, aa, bb, dd)
 print(result)
 
 string_chet = 'Орден фениксаc'

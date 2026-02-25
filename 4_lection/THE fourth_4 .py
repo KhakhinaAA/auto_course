@@ -8,13 +8,18 @@
 # 4 --> 0 (4 уже одна цифра, а значит мы проделали 0 итераций)
 
 def multiplication_chain(num):
-    count_multy=0
+    """Возвращает количество раз count_multy, которое вы должны
+    перемножить цифры числа num и полученных произведений,
+    пока не получите одну цифру.
+    :param num: положительное число"""
+
+    count_multy = 0
     x = str(num)
     while len(x) != 1:
         print(len(x))
-        j=1
-        for i in x:
-            j=j*int(i)
+        j = 1
+        for t in x:
+            j = j*int(t)
         x = str(j)
         count_multy += 1
     print(count_multy)

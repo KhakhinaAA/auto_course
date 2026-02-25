@@ -14,17 +14,19 @@
 # [4] => 1 вышел, 4 остался последним т.е. выжившим - это наш ответ survivor.
 
 def josephus_task(num_people, kill_num):
-    # Здесь нужно написать код
+    """Задача Иосифа Флавия (вычисляет последний элемент из списка)
+    :param num_people: целое положительное число - количество воинов
+    :param kill_num: целое положительное число - какой по счету вылетает"""
+
     people = list(range(1, num_people + 1))
     survivor = 0
     if len(people) == 1:
         survivor = people[0]
     else:
         while len(people) > 1:
-            a = 0
             if len(people) >= kill_num:
                 put_to_end = people[:kill_num - 1]
-                print(put_to_end, 'end') #
+                print(put_to_end, 'end')
                 del people[:kill_num-1]
                 del people[0]
                 print(people, '1')

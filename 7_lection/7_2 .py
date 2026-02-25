@@ -23,26 +23,53 @@
 
 # Здесь пишем код
 class PersonInfo:
-    def __init__(self,Строка = str,Число = int,*args):
-        self.fio = Строка
-        self.age = Число
+    def __init__(self, string, number, *args):
+        self.fio = string
+        self.age = number
         self.depart = args
-        #print(self.fio)
-        #print(self.age)
-        #print(self.depart)
-        #print(type(self.depart))
 
     def short_name(self):
-        my_list = list(self.fio)
-        my_list = my_list.reverse(self.fio)
-        print(my_list)
-        return my_list
-        print(my_list)
-    def path_deps(self):
-        a = "-->".join(f"{self.depart}" for i in range(self.depart))
-        print(a)
-    def new_salary(self):
+        """
+        Возвращает строку Фамилия И
+        """
+        my_list = self.fio.split()
+        my_list.reverse()
+        r = my_list[0]
+        g = my_list[1][0]
+        short = f"{r} {g}."
+        print(short)
+        return short
 
+    def path_deps(self):
+        """
+        Возвращает путь "Головное подразделение --> ... --> Конечное подразделение"
+        """
+        print(self.depart)
+        a = " --> ".join(f"{self.depart[j]}" for j in range(len(self.depart)))
+        print(a)
+        return a
+
+    def new_salary(self):
+        """
+        Индексация зарплаты
+        """
+        c = "".join(f"{self.depart[j]}" for j in range(len(self.depart)))
+        ac = tuple(c)
+        print(ac)
+        lst = list()
+        list_1 = list()
+        for j in range(len(ac)):
+            if ac[j] not in list_1:
+                b = ac.count(ac[j])
+                lst.append(b)
+                list_1.append(ac[j])
+
+        print(lst)
+        list_1 = sorted(lst, reverse=True)
+        print(list_1)
+        sums = list_1[0] + list_1[1] + list_1[2]
+        index = 1337 * sums * self.age
+        return index
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
