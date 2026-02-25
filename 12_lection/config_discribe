@@ -1,0 +1,66 @@
+BROWSER = chrome какой браузер запустить
+SITE = https://fix-online.sbis.ru/ который проверить на доступность перед запуском тестов
+ELEMENT_OUTPUT_LOG = user_friendly/locator/name как логировать элементы
+DO_NOT_RESTART = True не перезапускать браузер между тестами 1 класса
+SOFT_RESTART = False не стирать куки между тестами 1 класса
+WAIT_ELEMENT_LOAD = 20 время ожидания завершения действия
+
+open открыть страницу
+switch_to_new_window переключиться на новую вкладку
+switch_to_parent_window переключиться на первую вкладку
+close закрыть вкладку
+refresh обновить страницу
+should_be ожидание какого либо состояния
+close_alert закрыть нативный алерт
+
+Browser.should_be
+  UrlExact - точное соответствие  url
+  UrlContains - вхождение в url
+  TitleExact - точное соответствие title страницы
+  TitleContains - вхождение в title страницы
+
+
+   self.browser.should_be(self, UrlExact(sbis_site), TitleExact(sbis_title), msg='', wait_time=5)
+
+Базовые элементы
+  Region базовый контейнер для элементов страницы
+  Element/Button/Link - базовые элементы
+  TextField - input
+  CustomList - список однотипных элементов  с возможностью получения  конкретного по индексу и тексту
+  Table - нативная таблица (table/tbody/thead/th/tr/td)
+
+Element базовые методы
+  click  клик
+  type-in ввод текста
+  mouse_over навести мышку на элемент
+  should_be проверка состояния элемента
+  scrol_into_view проскролить до элемента
+  upload_file загрузить файл через нативное окно
+  element поиск дочернего элемента в текущем
+
+Состояния для Element.shoud_ be
+    ExactText/ContainsText/ExactTextIgnoringCase/TextIgnoringCase  проверка текста с и без игнора регистра
+    CssClass/Attribute/CSSProperty
+    Enabled/Disabled/Readonly состояние
+    Hidden/Displayed/Visible/Present видимость
+    RowsNumber количество строк у таблиц
+
+
+    action = lambda: sbis_ru.start_work.type_in('test')
+    Эта запись эквивалентна
+    def action():
+        return sbis_ru.start_work.type_in('test')
+    self.browser.switch_to_new_window(action)  - если мне нужно вызвать метод с параметрами
+
+    self.browser.switch_to_new_window(sbis_ru.start_work.type_in) - не вызываю функцию. а даю ссылку на неЁ
+
+     assert_that:
+        equal_to/not_equal равенство
+        equal_to_ignoring_case равеснтво с игнорированием регистра
+        is_/is_not идентичность
+        is_in/is_not_in вхождение
+        is_in_ignoring_case вхождение с игнорированием регистра
+        greater_than, greater_than_or_equal_to больше, больше или равно
+        less_than,less_than_or_equal_to меньше, меньше или равно
+
+       assert_that(lambda: sbis_ru.tabs.count_elements, equal_to(4), 'Не верное количество табов', and_wait()) ,будет каждый раз высчитывать новое количество табов, если без лямбда, то вернет текущее

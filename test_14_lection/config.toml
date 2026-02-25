@@ -1,0 +1,16 @@
+[GENERAL]
+BROWSER = "CHROME"
+SITE = 'https://fix-online.sbis.ru/'
+ELEMENT_OUTPUT_LOG = 'user_friendly/locator/name'
+DO_NOT_RESTART = true
+SOFT_RESTART = false
+WAIT_ELEMENT_LOAD = 20
+HIGHLIGHT_ACTION = true
+DELAY_ACTION = 0.5
+
+[CUSTOM]
+SBIS_SITE = 'https://fix-online.sbis.ru/'
+SITE_TEST = 'https://fix-online.sbis.ru/page/work-schedule-documents'
+sbis_title = 'СБТС - экосистема для бизнеса'
+USER_LOGIN = 'khakhinaNastya'
+USER_PASSWORD = 'khakhinaNastya123'
