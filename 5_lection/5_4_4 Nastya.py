@@ -12,44 +12,22 @@
 # Например (Ввод --> Вывод):
 # курс --> 6 (к=2, у=2, р=1, с=1)
 
-set_1 = ('а', 'в', 'е', 'ё', 'и', 'н', 'о', 'р', 'с', 'т')
-set_2 = ('д', 'к', 'л', 'м', 'п', 'у')
-set_3 = ('б', 'г', 'ь', 'а', 'я')
-set_4 = ('й', 'ы')
-set_5 = ('ж', 'з', 'х', 'ц', 'ч')
-set_8 = ('ф', 'ш', 'э', 'ю')
-set_10 = ('щ')
-set_15 = ('ъ')
-
-
 def scrabble(word):
-    """
-    Игра "Эрудит"
-    считает кол-во очков (points), полученное за слово
-    :param word: str
-    """
-    points = 0
-    word_list = list(word)
-    for k in range(len(word_list)):
-        if word_list[k] in set_1:
-            points += 1
-        elif word_list[k] in set_2:
-            points += 2
-        elif word_list[k] in set_3:
-            points += 3
-        elif word_list[k] in set_4:
-            points += 4
-        elif word_list[k] in set_5:
-            points += 5
-        elif word_list[k] in set_8:
-            points += 8
-        elif word_list[k] in set_10:
-            points += 10
-        elif word_list[k] in set_15:
-            points += 15
-    print(points)
-    # Здесь нужно написать код
-    return points
+    # Словарь соответствия букв количеству очков
+    points = {
+        'а': 1, 'в': 1, 'е': 1, 'ё': 1, 'и': 1, 'н': 1, 'о': 1, 'р': 1, 'с': 1, 'т': 1,
+        'д': 2, 'к': 2, 'л': 2, 'м': 2, 'п': 2, 'у': 2,
+        'б': 3, 'г': 3, 'ь': 3, 'я': 3,
+        'й': 4, 'ы': 4,
+        'ж': 5, 'з': 5, 'х': 5, 'ц': 5, 'ч': 5,
+        'ф': 8, 'ш': 8, 'э': 8, 'ю': 8,
+        'щ': 10,
+        'ъ': 15
+    }
+
+    total_points = sum(points.get(char.lower(), 0) for char in word if char.isalpha())
+    return total_points
+
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 

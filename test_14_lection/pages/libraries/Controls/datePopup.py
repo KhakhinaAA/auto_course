@@ -7,11 +7,12 @@ from test_14_lection.pages.saby_pages.WorkScheduleDocuments import WorkScheduleD
 
 @templatename('Controls/datePopup')
 class DatePopup(StickyTemplate):
-    """Выбор даты в отгуле"""
+    """Календарь в отгуле"""
 
     date_inp = ControlsInputDate(By.CSS_SELECTOR, '.controls-Input-DatePicker input', 'дата')
 
     def calendar_1(self):
+        """Выставляет дату в отгуле"""
         op_cal = WorkScheduleDocuments(self.driver)
         op_cal.open_calendar.double_click()
         today = date.today()

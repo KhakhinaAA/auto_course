@@ -4,7 +4,7 @@
 # соответствующие количеству вхождений данной буквы в строку.
 # Например (Ввод --> Вывод) :
 # 'letter' --> {'l': 1, 'e': 2, 't': 2, 'r': 1}
-
+from collections import Counter
 
 def letter_stat(our_str):
     """
@@ -14,10 +14,7 @@ def letter_stat(our_str):
 
     :param our_str: строка
     """
-    our_str_1 = list(our_str)
-    # Используя генератор словаря (dict comprehension)
-    letters_dict = {j: our_str_1.count(j) for j in our_str_1}
-    return letters_dict
+    return dict(Counter(our_str))
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 

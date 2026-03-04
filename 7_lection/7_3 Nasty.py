@@ -49,6 +49,8 @@ class Bus(PublicTransport):
 
     @property
     def park(self):
+        """Возвращает значение park,
+          а при присвоении проверять номер парка, что он в диапазоне от 1000 до 9999"""
         return self.__park
 
     def set_park(self, value):

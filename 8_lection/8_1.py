@@ -18,6 +18,7 @@ import unittest  # Не удалять
 
 
 def treatment_sum(our_tuple):
+    """Проверяет условия для кортежей"""
     try:
         if len(our_tuple) <= 2:
             sums = our_tuple[0] + our_tuple[1]

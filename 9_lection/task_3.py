@@ -11,6 +11,7 @@ file_1_2 = file_1.split('\n\n')
 # print(file_1_2)
 file.close()
 list_sum = []
+
 for i in range(len(file_1_2)):
     lines = re.findall(r"\d+", file_1_2[i])
     # print(lines)
@@ -18,6 +19,7 @@ for i in range(len(file_1_2)):
     sum_lines = sum(lines)
     list_sum.append(sum_lines)
 print(list_sum)
+
 summa = sorted(list_sum)
 top_3_max = summa[-3:]
 three_most_expensive_purchases = sum(top_3_max)

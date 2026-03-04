@@ -6,15 +6,20 @@
 def create_phone_number(num_tuple):
     """
     Возвращает строку в виде номера телефона str_phone
+
     :param num_tuple: кортеж из 10 цифр
     """
     import re
     str_phone_1 = str(num_tuple)
+    # Используя регулярное выражение, разделяет строку на части по запятым, скобкам и пробелам.
+    # Результат сохраняется в списке `str_phone_2`.
     str_phone_2 = re.split(r'[,)(" ]', str_phone_1)
     print(str_phone_2, '1')
+    # Удаляются пустые строки
     while '' in str_phone_2:
         str_phone_2.remove('')
     print(str_phone_2, '2')
+    # Группируем и формируем финальную строку
     a = ''.join(str_phone_2[:3])
     c = ''.join(str_phone_2[6:])
     b = ''.join(str_phone_2[3:6:1])

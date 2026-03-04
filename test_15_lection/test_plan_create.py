@@ -2,13 +2,22 @@ from atf.ui import *
 from atf import *
 from pages.auth_page import AuthPage
 from pages.saby_pages.Plans import Plans
+from atf.api.json_rpc import JsonRpcClient
+from api.wrappers.plan_functions import PlanFunctions
 
 
 class TestControls2(TestCaseUI):
+    client = None
+    autotest_mask = "Палм-Спрингс / ДЗ"
+
     @classmethod
     def setUpClass(cls):
         cls.browser.open(cls.config.get('SITE'))
         AuthPage(cls.driver).auth(cls.config.get('USER_LOGIN'), cls.config.get('USER_PASSWORD'))
+        cls.client = JsonRpcClient(url="https://fix-online.sbis.ru/", verbose_log=2)
+        cls.client.auth(login='khakhinaNastya', password="khakhinaNastya123")
+
+        PlanFunctions(cls.client).delete_plan_by_mask(cls.autotest_mask)
 
     def setUp(self):
         Plans(self.driver).open()
@@ -26,10 +35,15 @@ class TestControls2(TestCaseUI):
         object_text = 'Палм-Спрингс'
         customer_fio = 'Пчелкин Егор'
         point_text = 'Выполнение ДЗ'
+        mask = 'ДЗ'
         # excecutor = 'Бэггинс Бильбо из Шира'
         log('Создание Плана')
-        plan_page.create_plan(object_text, customer_fio, point_text)
+        plan_page.create_plan(object_text, mask, customer_fio, point_text)
         log('Проверка Плана')
         plan_page.check_plan(object_text, point_text)
-        log('Удаление Плана из реестра')
-        plan_page.delete(object_text)
+        # log('Удаление Плана из реестра')
+        # plan_page.delete(object_text)
+
+    @classmethod
+    def tearDownClass(cls):
+        PlanFunctions(cls.client).delete_plan_by_mask(cls.autotest_mask)

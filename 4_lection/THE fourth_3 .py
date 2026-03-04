@@ -7,13 +7,15 @@
 # 4 --> 4
 
 def sum_digits(num):
+    """Возвращает сумму цифр числа
+
+    :param num: положительное число"""
     our_sum = 0
     x = str(num)
     if num > 0:
         for j in x:
             our_sum += int(j)
             print(our_sum)
-    # Здесь нужно написать код
     return our_sum
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

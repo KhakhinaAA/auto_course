@@ -12,30 +12,18 @@ def repeats(our_str):
 
      :param our_str: str
     """
-    # Преобразуем строку в список
-    our_str_1 = list(our_str)
-    # словарь для подсчета количества появлений каждого символа
-    count_dict = {}
-    # словарь для хранения новых ключей д_5
-    count_dict_2 = {}
-
-    for element in our_str_1:
-        # Если символ встречается впервые, мы добавляем его в оба словаря
-        if element not in count_dict:
-            b = element + "_" + str(1)
-            count_dict[element] = 1
-            count_dict_2[b] = 1
-        # Если символ уже встречался ранее, увеличиваем счётчик в первом словаре и обновляем второй словарь а_5
+    # Список для хранения промежуточных результатов
+    result = []
+    # Словарь для отслеживания количества повторений символов
+    counts = {}
+    for char in our_str:
+        if char not in counts:
+            counts[char] = 1
         else:
-
-            count_dict[element] += 1
-            a = element + "_" + str(count_dict[element])
-            count_dict_2[a] = count_dict[element]
-
-    our_str_2 = list(count_dict_2.keys())
-    new_str = ''.join(our_str_2)
-    print(new_str)
-    return new_str
+            counts[char] += 1
+        # Каждый раз после обновления счётчика формируем новую строку формата "а_5"
+        result.append(f"{char}_{counts[char]}")
+    return ''.join(result)
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 

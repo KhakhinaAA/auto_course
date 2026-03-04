@@ -16,6 +16,7 @@
 # Алексей Егоров: Мартин, 5; Вася, 4
 # Анна Самохина: Фродо, 3
 # Снова есть разница где объявлять переменные вне функции или внутри!! снаружи не отработает
+from collections import defaultdict
 
 
 def everything_for_your_cat(cats_data):
@@ -23,45 +24,31 @@ def everything_for_your_cat(cats_data):
 
     :param cats_data: список кортежей вида [('Мартин', 5, 'Алексей', 'Егоров'),
 #  ('Фродо', 3, 'Анна', 'Самохина')]"""
-    my_list2 = list()
-    my_dict = {}
-    # преобразуем в набор списков
-    for j in range(len(cats_data)):
-        my_list1 = list(cats_data[j])
-        print(my_list1)
-        # формируем строку имени
-        a = str(my_list1[2]) + ' ' + str(my_list1[3])
-        print(a)
-        # устанавливаем на первую позицию Имя и фамилию
-        my_list1.insert(0, a)
-        # Удаляются лишние элементы начиная с индекса 3
-        del my_list1[3:]
-        print(my_list1)
-        # формируются значения, объединяя второй и третий элемент новой строки с запятой между ними.
-        b = str(my_list1[1]) + ', ' + str(my_list1[2])
-        del my_list1[1:]
-        # Итоговая строка добавляется обратно в виде нового списка
-        my_list1.append(b)
-        print(b)
-        print
 
-        my_list2.append(my_list1)
-    # Если ключ (первое поле строки) отсутствует в словаре — создается запись с новым ключом и значением.
-    # Если ключ уже существует — старое значение обновляется путем добавления текущего значения с разделителем "; ".
-    for j in range(len(my_list2)):
-        if my_list2[j][0] not in my_dict:
-            my_dict[my_list2[j][0]] = my_list2[j][1]
+    result_dict = defaultdict(list)
 
-        else:
-            my_dict[my_list2[j][0]] = my_dict[my_list2[j][0]] + '; ' + my_list2[j][1]
+    # Проходим по каждому кортежу в списке
+    for nickname, age, first_name, last_name in cats_data:
+        # Создаем полное имя покупателя
+        full_name = f"{first_name} {last_name}"
 
-    our_str = ''
-    for key, value in my_dict.items():
-        our_str += f"{key}: {value}\n"
-    print(our_str)
-    return our_str
+        # Добавляем информацию о котике в список фмо
+        result_dict[full_name].append((nickname, age))
+        print(result_dict)
 
-# Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
+    # Формируем результирующую строку
+    output_string = ""
+    for full_name, cats in result_dict.items():
+        # Формируем строку с информацией о каждом котике
+        cats_info = "; ".join([f"{cat[0]}, {cat[1]}" for cat in cats])
+        # Добавляем полную строку с покупателем и его котиками
+        output_string += f"{full_name}: {cats_info}\n"
+        print(output_string)
+
+    # Возвращаем результирующую строку без последнего символа "\n"
+    return output_string
+
+    # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
 
 data = [[('Мартин', 5, 'Алексей', 'Егоров'),

@@ -11,6 +11,7 @@ def multiplication_chain(num):
     """Возвращает количество раз count_multy, которое вы должны
     перемножить цифры числа num и полученных произведений,
     пока не получите одну цифру.
+
     :param num: положительное число"""
 
     count_multy = 0
@@ -23,7 +24,6 @@ def multiplication_chain(num):
         x = str(j)
         count_multy += 1
     print(count_multy)
-    # Здесь нужно написать код
     return count_multy
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

@@ -15,27 +15,41 @@
 
 def josephus_task(num_people, kill_num):
     """Задача Иосифа Флавия (вычисляет последний элемент из списка)
+
     :param num_people: целое положительное число - количество воинов
     :param kill_num: целое положительное число - какой по счету вылетает"""
 
+    # Создаем список всех участников
     people = list(range(1, num_people + 1))
     survivor = 0
+
+    # Если всего один участник - сразу возвращаем его номер
     if len(people) == 1:
         survivor = people[0]
     else:
+        # Пока остаются хотя бы два участника
         while len(people) > 1:
+            # Случай, когда оставшихся достаточно много
             if len(people) >= kill_num:
+                # Берём первых kill_num-1 элементов (их надо временно сохранить)
                 put_to_end = people[:kill_num - 1]
                 print(put_to_end, 'end')
+                # Удаляем первые kill_num-1 элементы
                 del people[:kill_num-1]
+                # И удаляем следующего элемента (это убитый солдат)
                 del people[0]
                 print(people, '1')
+                # Добавляем сохранённые элементы обратно в конец очереди
                 people.extend(put_to_end)
                 print(people, '2')
+                # Обновляем выжившего
                 survivor = people[0]
                 print(survivor, '3')
+            # Случай, когда участников меньше, чем kill_num
             else:
+                # Определяем индекс удаления с учётом остатка
                 a = kill_num % len(people)
+                # Берём первых kill_num-1 элементов (их надо временно сохранить)
                 put_to_end = people[:a - 1]
                 print(put_to_end, 'end')  #
                 del people[:a - 1]

@@ -6,7 +6,9 @@ from test_14_lection.pages.libraries.Staff.selectionNew import Stack
 
 @templatename('WorkTimeDocuments/timeoff:Dialog')
 class Dialog(DocumentTemplate):
-    add_ab = ExtControlsDropdownAddButton(SabyBy.DATA_QA, 'sabyPage-addButton', 'Создать отгул')
+
+    """Карточка отгула"""
+
     employee_cl = ControlsLookupInput(By.CSS_SELECTOR, '[data-qa="staff-Lookup__input"] .controls-Render__wrapper',
                                       'сотрудник', catalog=Stack)
     date_elm = Element(By.CSS_SELECTOR, '.wtd-dayTimeSelector--hover-cursor-pointer', 'дата')
@@ -21,35 +23,40 @@ class Dialog(DocumentTemplate):
 
     def fill_employee(self, **kwargs):
         """Заполняем отгул
-        сотрудник из автодополнения"""
-        # self.open_elm.click()
+        сотрудник из автодополнения
+        :param kwargs: Словарь с ключом - Сотрудник"""
+
         if 'Сотрудник' in kwargs.keys():
             self.employee_cl.autocomplete_search(kwargs['Сотрудник'])
 
     def fill_time_off(self, **kwargs):
         """Заполнение в отгуле
-        причины
-        дата"""
+        причины и даты
+        :param kwargs: Словарь с ключом - Причина"""
         if 'Причина' in kwargs.keys():
             self.reason_re.type_in(kwargs['Причина'])
         # cal = (self.driver)
         # cal.calendar_1()
 
     def run_task(self, **kwargs):
-        """Отправить на выполнение"""
+        """Отправляет на выполнение документ
+        :param kwargs: словарь с ключом - Сотрудник"""
         self.phase_db.click()
         pan = Panel(self.driver)
         pan.panel_stage(**kwargs)
         self.phase_db.should_not_be(Displayed)
 
     def check_completion(self, **kwargs):
-        """Проверяем заполнение Сотрудника, причины"""
+        """Проверяем заполнение Сотрудника, причины
+        :param kwargs: словарь с ключами - Сотрудник, Причина"""
+
         self.employee_cl.should_be(ContainsText(kwargs['Сотрудник']))
         self.reason.should_be(ContainsText(kwargs['Причина']))
         self.close_elm.click()
 
     def clock_time_off(self):
         """Заполняем время отгула (не справилась)"""
+
         self.clock_elm.click()
         self.time_el_start.type_in(1200)
         self.time_el_end.type_in('1400')

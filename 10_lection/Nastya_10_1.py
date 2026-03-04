@@ -36,6 +36,7 @@ def list_words():
 
 
 def generate_random_name():
+    """Генерирует два слова из латинских букв от 1 до 15 символов, разделенных пробелами"""
     while True:
         a = list_words()
         for n in a:

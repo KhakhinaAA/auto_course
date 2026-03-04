@@ -28,20 +28,31 @@ class WorkScheduleDocuments(Region):
         self.check_page_load_wasaby()
 
     def create_document(self, regulation='Отгул'):
-        """:param regulation:"""
 
+        """Создает отгул
+        :param regulation: тип догумента для выбора
+         из выпадаюшего списка кнопки плюс"""
+
+        log('Создаем отгул')
         self.create_dwbtn.select('Отгул', regulation)
 
     def search_task(self, task):
-        """Поиск отгула"""
+        """Поиск отгула
+        :param task: строка для поиска отгула через поиск"""
+
         self.filter_cds.click()
         self.search.search(task, search_btn_click=True)
         self.time_off.row(contains_text=task).should_be(Displayed)
 
     def re_open(self, task):
+        """Переоткрывает отгул
+        :param task: строка, маска для выбора отгула в списке документов"""
+
         self.time_off.row(contains_text=task).click()
 
     def pmo_delete(self):
+        """Удаляет документ из реестра через ПМО"""
+
         self.pmo_open_elm.click()
         # self.notice_all_op.click()
         # self.pmo.open()
